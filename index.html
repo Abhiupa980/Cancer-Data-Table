@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Data Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cancer Data Table</h1>
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
+    <table id="cancerTable" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Diagnosis</th>
+                <th>Radius Mean</th>
+                <th>Texture Mean</th>
+                <th>Perimeter Mean</th>
+                <th>Area Mean</th>
+                <th>Smoothness Mean</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>  <!-- Table body for dynamic data -->
+    </table>
+
+    <!-- Pagination Buttons -->
+    <div id="pagination">
+        <button id="prevBtn">⬅️ Previous</button>
+        <button id="nextBtn">Next ➡️</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
